@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>finalmock</title>
+
+    <style>
+        #mainbox {
+            border: 2px solid black;
+            padding: 15px;
+            height: 1590px;
+            width: 780px;
+            background-color: rgb(148, 144, 144);
+            
+        }
+        input{
+            width: 110%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+        #address{
+            width: 91%;
+        }
+        #heading {
+            font-family:sans-serif;
+            font-size: xx-large;
+            
+
+
+        }
+
+        #secondheading {
+            border: 2px solid rgb(225, 180, 120);
+            background-color: rgb(242, 184, 108);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 12px;
+        }
+
+        #first-name {
+            float: left;
+        }
+
+        #second-name {
+            float: left;
+            padding-left: 65px;
+            margin-top: -19px;
+        }
+
+        #third-name {
+            float: right;
+            padding-right:90px;
+            margin-top: -38px;
+
+        }
+
+        #city {
+            float: left;
+        }
+
+        #state {
+            float: left;
+            padding-left: 95px;
+            margin-top: -18px;
+            
+        }
+
+        #zip-code {
+            float: right;
+            padding-right: 90px;
+            margin-top: -38px;
+        }
+
+        #shipping-info {
+            border: 2px solid burlywood;
+            background-color:  rgb(242, 184, 108);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 12px;
+        }
+
+        #parts-info {
+            border: 2px solid burlywood;
+            background-color:  rgb(242, 184, 108);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 8px;
+            /* height: 25px; */
+        }
+
+        #Part-name {
+            float: left;
+        }
+
+        #describ {
+            float: left;
+            padding-left: 30px;
+            margin-right: 50px;
+            margin-top: -19px;
+        }
+        .unit-input{
+            width: 40%;
+        }
+        .quality-input{
+            width: 30%;
+        }
+        #unit {
+            float: right;
+            padding-right: 190px;
+            padding-left: 50px;
+            margin-top: -46px;
+
+        }
+
+        #t1 {
+            float: right;
+            padding-right: 75px;
+            margin-top: -60px;
+            margin-right: -80px;
+        }
+
+        #cvp {
+            float: left;
+        }
+
+        #steel {
+            float: left;
+            padding-left: 160px;
+            margin-top: -19px;
+            margin-right: 50px;
+        }
+
+        #Part-name1 {
+            float: left;
+        }
+
+        #copper {
+            float: left;
+            padding-left: 160px;
+            margin-top: -19px;
+            /* margin-right: 80px; */
+        }
+
+        #quality {
+            float: right;
+            padding-right: 120px;
+            margin-top: -65px;
+            margin-right: -180px;
+        }
+
+        #credit {
+            float: left;
+        }
+
+        #expiry {
+            float: left;
+            padding-left: 70px;
+            margin-top: -19px;
+        }
+
+        #security {
+            float: right;
+            padding-right: 90px;
+            margin-top: -38px;
+        }
+
+        #last-button {
+            background-color: rgb(81, 76, 76);
+            padding: 10px;
+            width: 200px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainbox">
+
+        <!-- first box -->
+
+        <h2 id="heading">Customer Order Form</h2>
+
+        <div>
+            <p id="secondheading"><strong>Billing Information </strong></p>
+        </div>
+
+        <div id="first-name">
+            <form>
+                <label for="">First Name
+                    <br>
+                    <input type="text" placeholder="first name" required>
+                </label>
+            </form>
+        </div>
+        <br>
+        <div id="second-name">
+            <label for="">Middle Name</label>
+            <br>
+            <input type="text">
+        </div>
+
+        <br>
+        <div id="third-name">
+            <label for="">Last Name</label>
+            <br>
+            <input type="text" placeholder="last name" required>
+        </div>
+        <br><br>
+
+        <label for="">Address</label>
+        <br>
+        <input type="text" placeholder="enter your address" required  id = "address" >
+
+        <br><br>
+
+        <div id="city">
+
+            <label for="">City</label>
+            <br>
+            <input type="text" required>
+        </div>
+        <br>
+        <div id="state">
+
+            <label for="">State</label>
+            <br>
+            <select name="" id="" required>
+                <option value="">Select</option>
+                <option value="">karnataka</option>
+                <option value="">chhattisgarh</option>
+                <option value="">delhi</option>
+                <option value="">punjab</option>
+                <option value="">uttar pradesh</option>
+                <option value="">sikkim</option>
+                <option value="">odissa</option>
+                <option value="">madhya pradesh</option>
+                <option value="">haryana</option>
+                <option value="">rajasthan</option>
+            </select>
+        </div>
+        <br>
+        <div id="zip-code">
+            <label for="">Zip Code</label>
+            <br>
+            <input type="number" required>
+        </div>
+
+        <br><br>
+        <input type="checkbox"><span>Check this box if your shipping address is same as your billing address</span>
+
+        <!-- second box -->
+
+        <div>
+            <p id="shipping-info"><strong>Shipping Information</strong></p>
+        </div>
+        <br>
+
+        <div id="first-name">
+            <form>
+                <label for="">First Name
+                    <br>
+                    <input type="text" placeholder="first name" required>
+                </label>
+            </form>
+        </div>
+        <br>
+        <div id="second-name">
+            <label for="">Middle Name</label>
+            <br>
+            <input type="text">
+        </div>
+
+        <br>
+        <div id="third-name">
+            <label for="">Last Name</label>
+            <br>
+            <input type="text" placeholder="last name" required>
+        </div>
+        <br><br>
+
+        <label for="">Address</label> 
+        <br>
+        <input type="text" placeholder="enter your address" required id = "address">
+
+        <br><br>
+
+        <div id="city">
+
+            <label for="">City</label>
+            <br>
+            <input type="text" required>
+        </div>
+        <br>
+        <div id="state">
+
+            <label for="">State</label>
+            <br>
+            <select name="" id="" required>
+                <option value="">Select</option>
+                <option value="">karnataka</option>
+                <option value="">chhattisgarh</option>
+                <option value="">delhi</option>
+                <option value="">punjab</option>
+                <option value="">uttar pradesh</option>
+                <option value="">sikkim</option>
+                <option value="">odissa</option>
+                <option value="">madhya pradesh</option>
+                <option value="">haryana</option>
+                <option value="">rajasthan</option>
+            </select>
+        </div>
+        <br>
+        <div id="zip-code">
+            <label for="">Zip Code</label>
+            <br>
+            <input type="number" required>
+        </div>
+        <br><br>
+
+        <!-- third box -->
+
+        <div>
+            <p id="parts-info"><strong>Parts Information</strong></p>
+        </div>
+        <br>
+
+        <div id="Part-name">
+            <label for="">Part Name</label>
+            <br>
+            <select name="" id="">
+                <option value="">90 Degree Eibow</option>
+            </select>
+        </div>
+        <br>
+
+        <div id="describ">
+            <label for="">Description</label>
+            <br>
+            <input type="text" placeholder="Main Piping 3/4">
+        </div>
+        <br>
+
+        <div id="unit">
+            <label for="">Unit Price($)</label>
+            <br>
+            <input type="number" placeholder="9" >
+        </div>
+        <br>
+
+        <div id="quality">
+            <label for="">Quality</label>
+            <br>
+            <input type="text" placeholder="1"  class = "quality-input">
+        </div>
+
+        <div id="t1">
+            <label for="">Total</label>
+            <p>$9.00</p>
+        </div>
+        <br>
+
+        <div id="cvp">
+            <select name="" id="">
+                <option value="">CVP Pipe</option>
+            </select>
+        </div>
+        <br>
+
+        <div id="steel">
+
+            <input type="text" placeholder="3/4 Stainless steel">
+        </div>
+        <br>
+
+        <div id="unit">
+
+            <input type="number" placeholder="14">
+        </div>
+        <br>
+
+        <div id="quality">
+
+            <input type="text" placeholder="2" class = "quality-input">
+        </div>
+
+        <div id="t1">
+            <p>$28.00</p>
+        </div>
+
+
+        <div id="Part-name1">
+
+            <select name="" id="">
+                <option value="">L Brackets</option>
+            </select>
+        </div>
+        <br>
+
+        <div id="copper">
+            <input type="text" placeholder="1* Polished Copper">
+        </div>
+        <br>
+
+        <div id="unit">
+
+            <input type="number" placeholder="6.5">
+        </div>
+        <br>
+
+        <div id="quality">
+            <input type="text" placeholder="3" class = "quality-input">
+        </div>
+
+        <div id="t1">
+            <p>$28.00</p>
+        </div>
+        <br><br>
+        <div id="t1">
+            <p>$19.50</p>
+        </div>
+        <br><br>
+
+        <button>Add</button>
+        <br><br>
+        <label for="">Sub Total</label>
+        <div id="t1">
+            <p>$56.50</p>
+        </div>
+        <br><br>
+        <label for="">Total Tax(9.25%)</label>
+        <div id="t1">
+            <p>$5.23</p>
+        </div>
+        <br><br>
+        <label for="">Total *</label>
+        <div id="t1">
+            <p>$61.73</p>
+        </div>
+        <br>
+        <div>
+            <p id="parts-info"><strong>Payment Information</strong></p>
+        </div>
+        <br>
+
+        <input type="radio">
+        <br><br>
+
+        <div id="credit">
+            <label for="">Credit Card *</label>
+            <br>
+            <input type="number" placeholder="XXXXXXXXXXXXXXXX">
+        </div>
+        <br>
+
+        <div id="expiry">
+            <label for="">Expiration date*</label>
+            <br>
+            <input type="number" placeholder="MM/YY">
+        </div>
+        <br>
+        <div id="security">
+            <label for="">Security Code *</label>
+            <br>
+            <input type="text" placeholder="XXX">
+        </div>
+        <br><br>
+
+        <input type="radio"><span>PayPal</span>
+
+        <br><br>
+        <button>Clear Fields</button>
+
+        <br><br>
+
+        <center><button id="last-button">PAY NOW</button></center>
+
+    </div>
+
+
+
+    <!-- <script>
+  let color=prompt("Enter Color Name")
+	document.body.style.backgroundColor=color
+    </script> -->
+
+
+</body>
+
+</html>
